@@ -1,0 +1,27 @@
+version: '3'
+ 
+services:
+  whip:
+    image: johncapobianco/whip:whip
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: 'postgres'
+    environment:
+      - POSTGRES_USER=whip
+      - POSTGRES_PASSWORD=whip
+      - POSTGRES_DB=whip
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgadmin:
+    driver: local

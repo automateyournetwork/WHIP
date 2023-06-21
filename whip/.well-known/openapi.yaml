@@ -1,0 +1,72 @@
+---
+openapi: "3.0.1"
+info:
+  title: "Women's Health Information Plugin API"
+  version: "1.0.0"
+servers:
+  - url: http://localhost:8000
+paths:
+  /Gestational_Limits/:
+    get:
+      operationId: "getGestationalLimits"
+      summary: "Get Gestational Limits JSON"
+      description: "Retrieve the Gestational Limits JSON data from the API."
+      responses:
+        '200':
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  networkData:
+                    type: "object"
+                    description: "The latest Gestational Limits API JSON output"
+  /Insurance_Coverage/:
+    get:
+      operationId: "getInsuranceCoverage"
+      summary: "Get Insurance Coverage JSON"
+      description: "Retrieve the Insurance Coverage JSON data from the API."
+      responses:
+        '200':
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  networkData:
+                    type: "object"
+                    description: "The latest Insurance Coverage API JSON output"
+  /Minors/:
+    get:
+      operationId: "getMinors"
+      summary: "Get Minors JSON"
+      description: "Retrieve the Minors JSON data from the API."
+      responses:
+        '200':
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  networkData:
+                    type: "object"
+                    description: "The latest Minors API JSON output"
+  /Waiting_Period/:
+    get:
+      operationId: "getWaitingPeriod"
+      summary: "Get Waiting Period JSON"
+      description: "Retrieve the Waiting Period JSON data from the API."
+      responses:
+        '200':
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  networkData:
+                    type: "object"
+                    description: "The latest Waiting Period API JSON output"
