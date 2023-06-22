@@ -7,9 +7,11 @@ services:
       context: ./
       dockerfile: ./docker/Dockerfile
     ports:
-      - "80:8000"
+      - "443:8000"
     depends_on:
       - db
+    volumes:
+      - /etc/letsencrypt/archive/whip.automateyournetwork.ca/:/etc/letsencrypt/live/whip.automateyournetwork.ca/
 
   db:
     image: 'postgres'
