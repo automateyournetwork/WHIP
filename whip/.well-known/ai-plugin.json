@@ -9,10 +9,10 @@
     },
     "api": {
         "type": "openapi",
-        "url": "http://localhost:8000/.well-known/openapi.yaml",
+        "url": "https://whip.automateyournetwork.ca/.well-known/openapi.yaml",
         "is_user_authenticated": false
     },
-    "logo_url": "http://localhost:8000/staticfiles/Artboard+9_rainbow3.png",
+    "logo_url": "https://whip.automateyournetwork.ca/staticfiles/Artboard+9_rainbow3.png",
     "contact_email": "ptcapo@gmail.com",
     "legal_info_url": "https://www.abortionpolicyapi.com/about-1"
 }

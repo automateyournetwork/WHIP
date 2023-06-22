@@ -4,7 +4,7 @@ info:
   title: "Women's Health Information Plugin API"
   version: "1.0.0"
 servers:
-  - url: http://localhost:8000
+  - url: https://whip.automateyournetwork.ca
 paths:
   /Gestational_Limits/:
     get:
