@@ -2,8 +2,8 @@
     "schema_version": "v1",
     "name_for_human": "WHIP",
     "name_for_model": "Womens_Health_Information",
-    "description_for_human": "Women's Health Information from the Abortion API",
-    "description_for_model": "Plugin to the abortionpolicyapi.com data. The data will include Women's Health Information JSON data related to abortion policies in the United States. Please provide an initial summary of the Abortion Policy API JSON data, help the user understand it, and highlight anything important. Please be sensitive at all times.",
+    "description_for_human": "Women's Health Information for the Abortion API",
+    "description_for_model": "Plugin to the abortionpolicyapi.com data. The data will include Women's Health Information JSON data related to abortion policies in the United States. Please provide an initial summary of the Abortion Policy API JSON data, help the user understand it, and highlight anything important. Please be sensitive in your responses at all times.",
     "auth": {
         "type": "none"
     },
