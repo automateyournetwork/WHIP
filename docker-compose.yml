@@ -2,6 +2,9 @@ version: '3'
  
 services:
   whip:
+    environment:
+      - HOST_NAME="https://whip.automateyournetwork.ca"
+    container_name: whip  
     image: johncapobianco/whip:whip
     build: 
       context: ./
