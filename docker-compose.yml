@@ -10,7 +10,7 @@ services:
       context: ./
       dockerfile: ./docker/Dockerfile
     ports:
-      - "8002:8002"
+      - "443:8000"
     depends_on:
       - db
     volumes:
